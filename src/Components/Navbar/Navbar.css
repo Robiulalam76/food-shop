@@ -1,6 +1,11 @@
 nav a {
     margin-left: 20px;
     font-weight: bold;
+    color: black;
+}
+
+nav a:hover {
+    color: orangered;
 }
 
 .active {

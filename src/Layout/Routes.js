@@ -3,7 +3,7 @@ import About from "../Components/About/About";
 import Error from "../Components/Error/Error";
 import Food from "../Components/Food/Food";
 import FoodDetails from "../Components/FoodDetails/FoodDetails";
-import Foods from "../Components/Foods/Foods";
+// import Foods from "../Components/Foods/Foods"; 
 import Home from "../Components/Home/Home";
 import Signup from "../Components/Signup/Signup";
 import Main from "./Main";

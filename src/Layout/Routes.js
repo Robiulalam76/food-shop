@@ -36,7 +36,7 @@ const router = createBrowserRouter([
             {
                 path: '/food-details/:idMeals',
                 loader: async ({ params }) => {
-                    return fetch(`www.themealdb.com/api/json/v1/1/lookup.php?i=${params.idMeals}`)
+                    return fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${params.idMeals}`)
 
                 },
                 element: <FoodDetails></FoodDetails>

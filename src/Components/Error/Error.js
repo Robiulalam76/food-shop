@@ -5,7 +5,7 @@ const Error = () => {
     return (
         <div>
 
-            <section class="bg-blue-50 text-blue-600 py-16 relative z-10">
+            <section class="bg-blue-50 text-blue-600 py-16  relative z-10">
                 <div class="container">
                     <div class="flex -mx-4">
                         <div class="w-full px-4">

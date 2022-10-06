@@ -20,6 +20,8 @@ const Navbar = () => {
                 <NavLink className={({ isActive }) => isActive ? 'active' : 'undefined'} to='/signup'>SignUp</NavLink>
             </div>
         </nav>
+
+
     );
 };
 

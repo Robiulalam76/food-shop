@@ -5,8 +5,8 @@ const Food = ({ food }) => {
     const { idMeal, strInstructions, strMealThumb, strMeal } = food
     // console.log(food)
     return (
-        <div className='mx-auto '>
-            <div className="card w-96 bg-base-100 shadow-xl bg-[#2A303C]">
+        <div className='mx-auto'>
+            <div className="card w-96 bg-base-100 shadow-xl bg-[#2A303C] mx-auto">
                 <figure><img className='h-44 w-full' src={strMealThumb} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title text-white">

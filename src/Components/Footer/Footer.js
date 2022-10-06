@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className=''>
 
-            <section className="bg-blue-50 w-[95%] mx-auto mt-[85px] text-black py-20 lg:py-[120px] overflow-hidden relative z-10">
+            <section className="bg-blue-50 w-[95%] mx-auto md:mt-[30px] text-black py-20 lg:py-[120px] overflow-hidden relative z-10">
                 <div className="container">
                     <div className="flex flex-wrap lg:justify-between -mx-4">
                         <div className="w-full lg:w-1/2 xl:w-6/12 px-4">

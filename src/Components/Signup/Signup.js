@@ -4,7 +4,7 @@ const Signup = () => {
     return (
         <div>
 
-            <div className="bg-blue-50 mt-12 min-h-screen flex flex-col">
+            <div className="bg-blue-50 mt-16 min-h-screen flex flex-col">
                 <div className="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
                     <div className="bg-cyan-50	 px-6 py-8 rounded shadow-lg text-black w-full">
                         <h1 className="mb-8 text-3xl font-bold text-center">Sign up</h1>

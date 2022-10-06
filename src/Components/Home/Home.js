@@ -6,8 +6,8 @@ const Home = () => {
     const foodsObj = useLoaderData()
     const foods = foodsObj.meals
     return (
-        <div className='w-[95%] mx-auto mt-[85px]'>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-12 mx-auto'>
+        <div className='w-[95%] mt-[85px] mx-auto'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-12'>
                 {
                     foods.map(food => <Food
                         key={food.idMeal}

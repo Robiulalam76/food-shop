@@ -103,7 +103,7 @@ const Checkout = () => {
     }
     return (
         <div className='w-[96%] mx-auto overflow-x-auto my-12 rounded-lg'>
-            <div className="">
+            <div className="overflow-x-auto">
                 <table className="table w-full text-center">
 
                     <thead>

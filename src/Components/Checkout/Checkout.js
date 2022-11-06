@@ -10,7 +10,7 @@ const Checkout = () => {
     const [shops, setShops] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/shops?email=${user?.email}`, {
+        fetch(`https://food-shop-server.vercel.app/shops?email=${user?.email}`, {
             headers: {
                 authorization: `Bearer ${localStorage.getItem('user-token')}`
             }
@@ -46,7 +46,7 @@ const Checkout = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch(`http://localhost:5000/shops/${id}`, {
+                fetch(`https://food-shop-server.vercel.app/shops/${id}`, {
                     method: 'DELETE',
                     headers: {
                         authorization: `Bearer ${localStorage.getItem('user-token')}`
@@ -82,7 +82,7 @@ const Checkout = () => {
         }).then((result) => {
             if (result.isConfirmed) {
 
-                fetch('http://localhost:5000/shops/', {
+                fetch('https://food-shop-server.vercel.app/shops/', {
                     method: 'DELETE',
                     headers: {
                         authorization: `Bearer ${localStorage.getItem('user-token')}`
@@ -93,7 +93,7 @@ const Checkout = () => {
                     .then(data => {
                         // console.log(data);
                         if (data.acknowledged) {
-                            fetch('http://localhost:5000/shops/')
+                            fetch('https://food-shop-server.vercel.app/shops/')
                                 .then(res => res.json())
                                 .then(data => setShops(data))
                         }

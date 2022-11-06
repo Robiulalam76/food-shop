@@ -28,7 +28,7 @@ const Navbar = () => {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/shops`)
+        fetch(`https://food-shop-server.vercel.app/shops`)
             .then(res => res.json())
             .then(data => setShops(data))
     }, [])

@@ -21,7 +21,7 @@ const FoodDetails = () => {
             email: user?.email
         }
 
-        fetch('http://localhost:5000/shops', {
+        fetch('https://food-shop-server.vercel.app/shops', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

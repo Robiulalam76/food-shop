@@ -13,7 +13,7 @@ const Foods = () => {
     const pages = Math.ceil(count / size)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/foods?page=${page}&size=${size}`)
+        fetch(`https://food-shop-server.vercel.app/foods?page=${page}&size=${size}`)
             .then(res => res.json())
             .then(data => {
                 setFoods(data.foods)

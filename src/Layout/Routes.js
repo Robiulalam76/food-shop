@@ -20,18 +20,18 @@ const router = createBrowserRouter([
         children: [
             {
                 path: '/',
-                // loader: () => fetch('http://localhost:5000/foods'),
+                // loader: () => fetch('https://food-shop-server.vercel.app/foods'),
                 element: <Home></Home>
             },
             {
                 path: '/home',
-                // loader: () => fetch('http://localhost:5000/foods'),
+                // loader: () => fetch('https://food-shop-server.vercel.app/foods'),
                 element: <Home></Home>
             },
             {
                 path: '/foods',
                 loader: async () => {
-                    return fetch('http://localhost:5000/foods')
+                    return fetch('https://food-shop-server.vercel.app/foods')
                 },
                 element: <Foods></Foods>
             },
@@ -39,7 +39,7 @@ const router = createBrowserRouter([
             {
                 path: '/foods/:id',
                 loader: async ({ params }) => {
-                    return fetch(`http://localhost:5000/foods/${params.id}`)
+                    return fetch(`https://food-shop-server.vercel.app/foods/${params.id}`)
 
                 },
                 element: <PriveteRoute><FoodDetails></FoodDetails></PriveteRoute>

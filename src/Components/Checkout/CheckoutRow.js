@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const CheckoutRow = ({ shop, handleDelete }) => {
@@ -6,7 +5,7 @@ const CheckoutRow = ({ shop, handleDelete }) => {
 
     return (
 
-        <tr>
+        <tr className='w-full'>
             <th>
                 <label>
                     <button onClick={() => handleDelete(_id)} className="btn btn-sm btn-circle btn-outline">

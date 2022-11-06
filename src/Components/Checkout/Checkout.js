@@ -102,8 +102,8 @@ const Checkout = () => {
         })
     }
     return (
-        <div className=''>
-            <div className="w-full my-12">
+        <div className='w-[96%] mx-auto overflow-x-auto my-12 rounded-lg'>
+            <div className="">
                 <table className="table w-full text-center">
 
                     <thead>
@@ -133,7 +133,7 @@ const Checkout = () => {
                 shops.length === 0 ?
                     <h1 className='text-center font-bold text-blue-600 text-2xl'>No Items</h1>
                     :
-                    <div className='flex justify-end mb-6'>
+                    <div className='flex justify-end my-6'>
                         <button onClick={() => handleClearShops()} className='flex items-center btn btn-warning'>
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" class="w-6 h-6">

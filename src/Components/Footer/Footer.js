@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/logo/logo.png'
 
 const Footer = () => {
     return (
@@ -1056,12 +1058,11 @@ const Footer = () => {
                     <div class="flex flex-wrap -mx-4">
                         <div class="w-full sm:w-2/3 lg:w-3/12 px-4">
                             <div class="w-full mb-10">
-                                <a
-                                    href="javascript:void(0)"
+                                <Link to='/'
                                     class="inline-block font-bold text-blue-600 text-2xl max-w-[160px] mb-6"
                                 >
-                                    FOOD SHOP
-                                </a>
+                                    <img className='w-24' src={logo} alt="" />
+                                </Link>
                                 <p class="text-base text-body-color mb-7">
                                     Sed ut perspiciatis undmnis is iste natus error sit amet
                                     voluptatem totam rem aperiam.
@@ -1459,6 +1460,11 @@ const Footer = () => {
                             </defs>
                         </svg>
                     </span>
+                </div>
+
+                <div className='text-center'>
+                    <h1 className='text-3xl text-rose-600 font-bold'>HIRE ME</h1>
+                    <p><a target="_blank" href="https://www.linkedin.com/in/robiulalam762/" >Develop By Robiul Alam</a></p>
                 </div>
             </footer>
 
